@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_register_navigation_graph"
+    app:startDestination="@id/introductionFragment">
+
+    <fragment
+        android:id="@+id/introductionFragment"
+        android:name="com.example.e_commerceapplication.fragments.usercredentials.IntroductionFragment"
+        android:label="IntroductionFragment"
+        tools:layout="@layout/fragment_introduction">
+        <action
+            android:id="@+id/action_introductionFragment_to_startLoginFragment"
+            app:destination="@id/startLoginFragment"
+            app:enterAnim="@anim/bottom_to_top"
+            app:exitAnim="@anim/top_to_bottom"
+            app:popExitAnim="@anim/top_to_bottom" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.e_commerceapplication.fragments.usercredentials.RegisterFragment"
+        android:label="RegisterFragment"
+        tools:layout="@layout/fragment_register">
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/bottom_to_top"
+            app:popExitAnim="@anim/top_to_bottom"
+            app:popUpTo="@id/startLoginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/startLoginFragment"
+        android:name="com.example.e_commerceapplication.fragments.usercredentials.StartLoginFragment"
+        android:label="StartLoginFragment"
+        tools:layout="@layout/fragment_start_login">
+        <action
+            android:id="@+id/action_startLoginFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/bottom_to_top"
+            app:popExitAnim="@anim/top_to_bottom" />
+        <action
+            android:id="@+id/action_startLoginFragment_to_registerFragment"
+            app:destination="@id/registerFragment"
+            app:enterAnim="@anim/bottom_to_top"
+            app:popExitAnim="@anim/top_to_bottom" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.e_commerceapplication.fragments.usercredentials.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/fragment_start_login"
+        app:popUpTo="@id/startLoginFragment">
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment"
+            app:enterAnim="@anim/bottom_to_top"
+            app:popExitAnim="@anim/top_to_bottom" />
+    </fragment>
+</navigation>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/app_name_lyt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/shopping_symbol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="27dp"
+            android:background="@drawable/ic_baseline_shopping_basket_24" />
+
+        <TextView
+            android:id="@+id/intro_app_name"
+            style="@style/h3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:paddingTop="10dp"
+            android:text="@string/shopping_time" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/register_title"
+        style="@style/h3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/please_login"
+        app:layout_constraintBottom_toTopOf="@+id/edit_text_email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/app_name_lyt" />
+
+    <EditText
+        android:id="@+id/edit_text_email"
+        style="@style/editText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="40dp"
+        android:hint="@string/email"
+        android:importantForAccessibility="yes"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@id/edit_text_password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_title" />
+
+    <EditText
+        android:id="@+id/edit_text_password"
+        style="@style/editText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:hint="@string/password"
+        android:importantForAccessibility="yes"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_email" />
+
+    <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
+        android:id="@+id/button_login"
+        style="@style/blueButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="40dp"
+        android:importantForAccessibility="yes"
+        android:text="@string/login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_password"
+        app:spinning_bar_color="@color/white"/>
+
+    <ImageView
+        android:id="@+id/facebook_login"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/facebook_login"
+        app:layout_constraintBottom_toTopOf="@id/google_login"
+        app:layout_constraintTop_toBottomOf="@id/button_login" />
+
+    <ImageView
+        android:id="@+id/google_login"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/google_login"
+        app:layout_constraintTop_toBottomOf="@id/facebook_login" />
+
+    <TextView
+        android:id="@+id/register_text"
+        style="h2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:text="@string/don_t_have_an_account_please_register"
+        app:layout_constraintTop_toBottomOf="@id/register_title" />
+
+    <TextView
+        android:id="@+id/forget_password_text"
+        style="h2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/forget_password"
+        app:layout_constraintTop_toBottomOf="@id/edit_text_password" />
+
+    <TextView
+        style="h2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login_with_google"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@id/google_login"
+        app:layout_constraintTop_toTopOf="@id/google_login" />
+
+    <TextView
+        style="h2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login_with_facebook"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@id/facebook_login"
+        app:layout_constraintTop_toTopOf="@id/facebook_login" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
