@@ -33,6 +33,7 @@ Application Functionality
 - Firebase Firestore for handling data.
 - Glide library for images.
 - Android navigation
+- Lottie Animations
 
 
 **Future Enhancement**
@@ -40,8 +41,17 @@ Application Functionality
 1. Payment Gateway
 2. Login using OTP, Facebook, and Google sign-in.
 3. Able to like or dislike the products.
+4. Text-to-speech search.
 
+Download file from here
+https://app.mediafire.com/82h1vkzeuwzx5
 
+Application Preview
+![Screenshot_20230902-221746](https://github.com/Rajeev745/Silver_eureka_shopify/assets/93214585/e56d22c5-8413-42ad-8d78-c3332438ce20)
+![Screenshot_20230902-221710](https://github.com/Rajeev745/Silver_eureka_shopify/assets/93214585/56e9c989-866c-4d02-8153-bab724cdec6d)
+![Screenshot_20230902-221651](https://github.com/Rajeev745/Silver_eureka_shopify/assets/93214585/8ea31362-3144-40e5-b432-77baf2ac413f)
+![Screenshot_20230902-221643](https://github.com/Rajeev745/Silver_eureka_shopify/assets/93214585/21866839-4591-41a0-a3d6-95e9b43bda76)
+![Screenshot_20230902-221821](https://github.com/Rajeev745/Silver_eureka_shopify/assets/93214585/7ad2e0c0-0801-4f22-8edf-bbe81bdb11e8)
 
 
 
